@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import AskQuestion from "./components/AskQuestion";
+import AnswerQuestion from "./components/AnswerQuestion";
+import "./components/css/index.css";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("home");
+  const [selectedQuestion, setSelectedQuestion] = useState(null);
+
+  const handleNavigation = (page) => {
+    setCurrentPage(page);
+  };
+
+  const handleQuestionSelection = (question) => {
+    setSelectedQuestion(question);
+    setCurrentPage("question-detail");
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header onNavigate={handleNavigation} />
+      {currentPage === "home" && <Home />}
+      {currentPage === "ask-question" && (
+        <AskQuestion onNavigate={handleNavigation} />
+      )}
+      {currentPage === "answer-question" && (
+        <AnswerQuestion onQuestionSelect={handleQuestionSelection} />
+      )}
     </div>
   );
 }
