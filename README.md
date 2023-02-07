@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# HoH - Helper of Homework
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[https://helper-of-homework.vercel.app/](https://helper-of-homework.vercel.app/)
 
-## Available Scripts
+과제를 업로드하고, 답변을 받을 수 있는 웹 어플리케이션입니다.
+크몽에서 여러 과제를 진행하면서, 정말 간단한 과제를 질문하시는 분들이 많았습니다.
+그래서 간단한 과제를 질문하고 답변을 받을 수 있는 웹 어플리케이션을 만들어 보았습니다.
 
-In the project directory, you can run:
+프로젝트 초반이고, 소량의 데이터를 저장하고 테스트할 수 있는 방법이 필요했기 때문에
+LocalStorage를 사용하였습니다. 이후에 프로젝트가 더욱 성장하고 저장되는 데이터가 복잡해짐에 따라
+MongoDB를 사용할 예정입니다.
 
-### `npm start`
+## 주요 기능
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 과제 질문
+- 과제 답변
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 사용 기술
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React
+- react-bootstrap
+- Styled-Components
+- LocalStorage
+- Vercel
